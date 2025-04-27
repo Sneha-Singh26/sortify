@@ -35,7 +35,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/sortify.git
+git clone https://github.com/Sneha-Singh26/sortify.git
 cd sortify
 Open index.html in your browser to run it locally.
 
