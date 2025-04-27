@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navbar Section -->
+  <header>
+    <nav class="navbar">
+      
+      <button class="hamburger" id="hamburger" onclick="toggleSidebar()">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sorting.html">Visualizer</a></li>
+        <li><a href="#about" >About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar Section -->
+    <aside class="sidebar collapsed" id="sidebar"> <!-- Sidebar starts collapsed -->
+      <div class="sidebar-content">
+        <h2>Sorting Options</h2>
+        
+        <button class="btn primary" onclick="startSorting()">Sort</button>
+        <button class="btn secondary" onclick="generateBars()">Generate New Array</button>
+        <button class="btn secondary" onclick="bubbleSort()">Bubble Sort</button>
+        <button class="btn secondary" onclick="selectionSort()">Selection Sort</button>
+        <button class="btn secondary" onclick="insertionSort()">Insertion Sort</button>
+        <button class="btn secondary" onclick="mergeSort(0, bars.length - 1)">Merge Sort</button>
+        <button class="btn secondary" onclick="quickSort(0, bars.length - 1)">Quick Sort</button>
+        <button class="btn secondary" onclick="heapSort()">Heap Sort</button> <!-- Added Heap Sort Button -->
+        <button class="btn warning" onclick="pauseSorting()">Pause</button>
+        <button class="btn success" onclick="resumeSorting()">Resume</button>
+      </div>
+    </aside>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+      <h1 class="title"> 📊 Sortify </h1>
+
+      <div class="input-container">
+        <input type="text" id="arrayInput" class="input-field" placeholder="Enter numbers separated by commas">
+        <button class="btn secondary" onclick="generateBarsFromInput()">Create Bars</button>
+        <button class="btn secondary" onclick="generateArray()">Create Array</button> <!-- Create Array Button -->
+      </div>
+      
+      <div id="bar-container" class="bar-container"></div> <!-- Container for bars -->
+      <!-- <div id="array-container" class="array-container"></div> Container for array blocks -->
+      
+      <div class="zoom-controls">
+        <button class="btn zoom" onclick="zoomInBars()">🔍 Zoom In</button>
+        <button class="btn zoom" onclick="zoomOutBars()">🔎 Zoom Out</button>
+      </div>
+      <!-- <div id="bar-container" class="bar-container"></div> -->
+      <div class="speed-control">
+        <label for="speedRange">Speed: <span id="speedValue">300</span></label>
+        <input type="range" id="speedRange" min="1" max="1000" value="300" oninput="updateSpeedValue()">
+      </div>
+      <div id="complexity-info" class="complexity-info">
+        <h3>Algorithm Complexity</h3>
+        <p><strong>Time:</strong> <span id="time-complexity">-</span></p>
+        <p><strong>Space:</strong> <span id="space-complexity">-</span></p>
+      </div>
+    </main>
+  </div>
+
+  
+
+  <script src="script.js"></script>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('collapsed');
+    }
+  </script>
+</body>
+</html>
