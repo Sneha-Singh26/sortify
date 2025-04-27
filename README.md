@@ -41,13 +41,13 @@ Open index.html in your browser to run it locally.
 
 📚 Algorithms Implemented
 
-Algorithm	Time Complexity (Best)	Time Complexity (Average)	Time Complexity (Worst)	Space Complexity
-Bubble Sort	O(n)	O(n²)	O(n²)	O(1)
-Insertion Sort	O(n)	O(n²)	O(n²)	O(1)
-Quick Sort	O(n log n)	O(n log n)	O(n²)	O(log n)
-Merge Sort	O(n log n)	O(n log n)	O(n log n)	O(n)
-Heap Sort	O(n log n)	O(n log n)	O(n log n)	O(1)
-Selection Sort	O(n²)	O(n²)	O(n²)	O(1)
+Algorithm	Time Complexity (Best)	Time Complexity (Average)	Time Complexity (Worst)	    Space Complexity
+Bubble Sort	        O(n)	                    O(n²)	                    O(n²)	                O(1)
+Insertion Sort	    O(n)	                    O(n²)	                    O(n²)	                O(1)
+Quick Sort	        O(n log n)	                O(n log n)	                O(n²)	                O(log n)
+Merge Sort	        O(n log n)	                O(n log n)	                O(n log n)	            O(n)
+Heap Sort	        O(n log n)	                O(n log n)	                O(n log n)	            O(1)
+Selection Sort	    O(n²)	                    O(n²)	                    O(n²)	                O(1)
 🎯 Core Functionalities
 Random Array Generation: Click to generate a new array with random values.
 
@@ -67,10 +67,6 @@ HTML5
 CSS3
 
 JavaScript (Vanilla)
-
-📷 Screenshots
-(Add some screenshots of your visualizer running here if you want.)
-
 🙌 Contributing
 Contributions, issues, and feature requests are welcome!
 Feel free to check issues page if you want to contribute.
